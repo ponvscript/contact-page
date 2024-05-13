@@ -59,7 +59,7 @@
   justify-content: space-between;
 }
 * body main form label {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
 }
 * body main form .input-name,
 * body main form .input-email,
@@ -96,7 +96,7 @@
 * body main form .input-subject input,
 * body main form .input-subject select {
   background-color: #F8FAFC;
-  height: 3rem;
+  height: 4rem;
   border-radius: 10px;
   border: 0;
   padding: 0 1rem;
@@ -115,7 +115,7 @@
   color: #111729;
 }
 * body main form button {
-  height: 3rem;
+  height: 4rem;
   margin-top: 1rem;
   border: 0;
   border-radius: 10px;
