@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+
+    body {
+        background: url(../img/bg-image.svg) no-repeat center center;
+        background-size: cover;
+        min-height: 100vh;
+        color: #F8FAFC;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        header {
+            margin: 2rem 4rem 0 4rem;
+
+            img {
+                height: 25px;
+            }
+        }
+
+        main {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+               font-size: 4rem;
+               text-align: center;
+               max-width: 80vw;
+               margin: 2rem 3rem 1rem 3rem;
+
+               & + p {
+                   font-size: 1.5rem;
+                   max-width: 65vw;
+                   text-align: center;
+               }
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 0.5rem;
+                width: 70vw;
+                max-width: 700px;
+                background-color: rgba(205, 213, 224, 0.25);
+                border-radius: 12px;
+                margin: 3rem 5rem;
+                padding: 1.5rem 2rem;
+
+                & > div {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(2, 1fr);
+                    gap: 1.5rem;
+                    justify-content: space-between;
+                }
+
+                label {
+                    font-size: 0.8rem;
+                }
+
+                .input-name,
+                .input-email,
+                .input-size,
+                .input-subject {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0.5rem;
+                    margin-bottom: 1.25rem;
+
+                    input::placeholder {
+                        color: #CDD5E0;
+                    }
+
+                    select {
+                        color: #111729;
+
+                        -moz-appearance:none; /* Firefox */
+                        -webkit-appearance:none; /* Safari and Chrome */
+                        appearance:none;
+
+                        background: url(../img/Expand_down.svg) no-repeat 95% 50%;
+                    }
+
+                    input,
+                    select {
+                        background-color: #F8FAFC;
+                        height: 3rem;
+                        border-radius: 10px;
+                        border: 0;
+                        padding: 0 1rem;
+                        font-weight: 600;
+                    }
+                }
+
+                textarea {
+                    width: 100%;
+                    background-color: #F8FAFC;
+                    border-radius: 10px;
+                    border: 0;
+                    padding: 1rem;
+                    font-weight: 600;
+                    resize: vertical;
+
+                    &::placeholder {
+                        color: #111729;
+                    }
+                }
+
+                button {
+                    height: 3rem;
+                    margin-top: 1rem;
+                    border: 0;
+                    border-radius: 10px;
+                    background-color: #F8FAFC;
+                    color: #4036A9;
+                    font-weight: 600;
+                    font-size: 1rem;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    * {
+        body {
+            main {
+                form {
+                    & > div {
+                        grid-template-columns: 1fr;
+                        gap: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,3 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+* body {
+  background: url(../img/bg-image.svg) no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  color: #F8FAFC;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+* body header {
+  margin: 2rem 4rem 0 4rem;
+}
+* body header img {
+  height: 25px;
+}
+* body main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+* body main h1 {
+  font-size: 4rem;
+  text-align: center;
+  max-width: 80vw;
+  margin: 2rem 3rem 1rem 3rem;
+}
+* body main h1 + p {
+  font-size: 1.5rem;
+  max-width: 65vw;
+  text-align: center;
+}
+* body main form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 70vw;
+  max-width: 700px;
+  background-color: rgba(205, 213, 224, 0.25);
+  border-radius: 12px;
+  margin: 3rem 5rem;
+  padding: 1.5rem 2rem;
+}
+* body main form > div {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+* body main form label {
+  font-size: 0.8rem;
+}
+* body main form .input-name,
+* body main form .input-email,
+* body main form .input-size,
+* body main form .input-subject {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+* body main form .input-name input::placeholder,
+* body main form .input-email input::placeholder,
+* body main form .input-size input::placeholder,
+* body main form .input-subject input::placeholder {
+  color: #CDD5E0;
+}
+* body main form .input-name select,
+* body main form .input-email select,
+* body main form .input-size select,
+* body main form .input-subject select {
+  color: #111729;
+  -moz-appearance: none; /* Firefox */
+  -webkit-appearance: none; /* Safari and Chrome */
+  appearance: none;
+  background: url(../img/Expand_down.svg) no-repeat 95% 50%;
+}
+* body main form .input-name input,
+* body main form .input-name select,
+* body main form .input-email input,
+* body main form .input-email select,
+* body main form .input-size input,
+* body main form .input-size select,
+* body main form .input-subject input,
+* body main form .input-subject select {
+  background-color: #F8FAFC;
+  height: 3rem;
+  border-radius: 10px;
+  border: 0;
+  padding: 0 1rem;
+  font-weight: 600;
+}
+* body main form textarea {
+  width: 100%;
+  background-color: #F8FAFC;
+  border-radius: 10px;
+  border: 0;
+  padding: 1rem;
+  font-weight: 600;
+  resize: vertical;
+}
+* body main form textarea::placeholder {
+  color: #111729;
+}
+* body main form button {
+  height: 3rem;
+  margin-top: 1rem;
+  border: 0;
+  border-radius: 10px;
+  background-color: #F8FAFC;
+  color: #4036A9;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
 
+@media screen and (max-width: 700px) {
+  * body main form > div {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
